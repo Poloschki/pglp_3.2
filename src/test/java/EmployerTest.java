@@ -7,7 +7,7 @@ public class EmployerTest {
   @Test
   public void getSalaire() {
     Vendeur v = new Vendeur();
-    assertEquals(1500,v.getSalaire());
+    assertEquals(1500, v.calcul_salaire());
   }
   
   @Test

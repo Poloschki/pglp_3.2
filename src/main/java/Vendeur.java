@@ -4,10 +4,8 @@ public class Vendeur extends Employer {
   
   public Vendeur()
   {
-    this.salaire= 1500;
-    this.anciennete = 1;
     this.commission = 0;
-    listEmployer.add(this.getSalaire());
+    listEmployer.add(this.calcul_salaire());
   }
   
   public void add_anciennete()
@@ -20,7 +18,7 @@ public class Vendeur extends Employer {
   }
   
   @Override
-  public void calcul_salaire() {
-    this.salaire = super.salaire + this.commission;
+  public int calcul_salaire() {
+    return super.calcul_salaire() + this.commission;
   }
 }
