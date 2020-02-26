@@ -7,9 +7,12 @@ public class Manager extends Employer {
     this.manage = 0;
   }
   
-  public void add_employer(int nb)
-  {
+  public void add_employer(int nb) {
     this.manage += nb;
+  }
+  
+  public int getManage() {
+    return this.manage;
   }
   
   public void setManage(int manage) {
